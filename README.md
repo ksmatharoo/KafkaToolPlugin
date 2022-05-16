@@ -1,3 +1,4 @@
+This is sample project which will generate the kafkatools/offset explorer plugin for the custom protobuf messages
 # Kafka Tools Plugins
 prerequisite to build
 1. set up maven home env var(%maven_home%)
