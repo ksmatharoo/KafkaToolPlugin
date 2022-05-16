@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "org.ksm.test.protobuf";
+option java_outer_classname = "TestProto";
+
+package test.protobuf;
+
+message TestMessage
+{
+  string guid = 1;
+}

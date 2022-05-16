@@ -1,0 +1,25 @@
+/**
+this is auto generated file by codegen.java,don't edit manually
+*/
+
+package com.kafkatool.external;
+
+import com.google.gson.TypeAdapter;
+import com.google.gson.stream.JsonReader;
+import com.google.gson.stream.JsonWriter;
+import com.google.protobuf.util.JsonFormat;
+import org.ksm.test.protobuf.${OuterClass};
+
+import java.io.IOException;
+
+class ${AdapterClass} extends TypeAdapter<${OuterClass}.${MessageClass}> {
+    @Override // dummy, never used in this context
+    public ${OuterClass}.${MessageClass} read(JsonReader jsonReader) throws IOException {
+        return ${OuterClass}.${MessageClass}.newBuilder().build();
+    }
+
+    @Override
+    public void write(JsonWriter jsonWriter, ${OuterClass}.${MessageClass} msg) throws IOException {
+        jsonWriter.jsonValue(JsonFormat.printer().print(msg));
+    }
+}
